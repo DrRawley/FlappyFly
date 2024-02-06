@@ -133,7 +133,7 @@ function draw() {
   bg.move()
 
   if (gameStarted) {
-    if (keyIsDown(32)) {
+    if (keyIsDown(32) || mouseIsPressed) {
       if (fly.vel >= 0) {
         fly.vel = 0;
       }
